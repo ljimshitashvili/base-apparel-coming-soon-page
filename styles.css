@@ -86,8 +86,8 @@ p{
 
 button{
     position: absolute;
-    top: -1px;
-    right: -1px;
+    top: -2px;
+    right: -2px;
     height: 48px;
     width: 64px;
     border-radius: 28px;

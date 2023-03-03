@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    padding: 34px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 0 32px;
+}
+
+.hero{
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 65px;
+}
+
+.hero-desktop{
+    display: none;
+}
+
+h1{
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 10.8254px;
+    color: #CE9898;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 10.8254px;
+    color: #423A3A;
+    margin-bottom: 16px;
+}
+
+p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #CE9898;
+    margin-bottom: 32px;
+}
+
+.input-container{
+    width: 100%;
+    border-radius: 28px;
+    /* opacity: 50%; */
+    border: 1px solid #CE9898;
+    height: 48px;
+    position: relative;
+}
+
+#input{
+    border: 0;
+    height: 100%;
+    border-radius: 28px;
+    background-color: transparent;
+    width: 100%;
+    padding-left: 24px;
+}
+
+button{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    height: 48px;
+    width: 64px;
+    border-radius: 28px;
+    border: 0;
+    background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+}
+
+.error-icon{
+    position: absolute;
+    right: 72px;
+    top: 12px;
+    display: none;
+}
+
+::placeholder{
+    color: #CE9898;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.error{
+    margin-top: 8px;
+    display: none;
+    color: #F96464;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.active.input-container{
+    border: 2px solid #F96464;
+}
+
+.active{
+    display:block;
+    
+}
+
+@media (min-width: 1300px){
+    body{
+        position: relative;
+        display: block;
+        background-image: url(./base-apparel-coming-soon-master_1/base-apparel-coming-soon-master/images/hero-desktop.jpg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: auto 100% ;
+    }
+
+    header{
+        padding: 80px 168px;
+    }
+
+    main{
+        max-width: 50%;
+        padding-left: 166px;
+        align-items: start;
+    }
+
+    h1{
+        text-align: left;
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: 17.3206px;
+    }
+
+    h2{
+        font-size: 64px;
+        line-height: 71px;
+        text-align: left;
+        letter-spacing: 17.3206px;
+        margin-bottom: 32px;
+    }
+    
+    p{
+        font-size: 16px;
+        line-height: 28px;
+        text-align: left;
+        margin-bottom: 40px;
+        max-width: 444px;
+    }
+
+    .error-icon{
+        right: 115px;
+        top: 15px;
+    }
+
+    .hero{
+        display: none;
+    }
+
+    .input-container{
+        max-width: 444px;
+        height: 56px;
+    }
+
+    #input{
+        height: 56px;
+    }
+
+    button{
+        right: -2px;
+        top: -2px;
+        width: 100px;
+        height: 57px;
+    }
+
+    button:hover{
+        cursor: pointer;
+    }
+}
